@@ -1,0 +1,5 @@
+<!-- Aplico  e l  pipe  al  arreglo  antes  de  hacer  el  *ngFor  -->
+<!-- A este  pipe  se  le  pasa  como  argumento  la  propiedad  filtroActual -->
+<ul class="todo-list">
+    <app-todo-item *ngFor="let todo of todos | filtroTodo:filtroActual" [todo]="todo"></app-todo-item>
+</ul>
